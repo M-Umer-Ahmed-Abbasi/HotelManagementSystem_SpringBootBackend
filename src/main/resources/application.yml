@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: hotel-management-system
+
+  # Default profile uses H2 for easy development
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:h2:mem:hoteldb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+# JWT Configuration
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000  # 24 hours in milliseconds
+
+# Server Configuration
+server:
+  port: 8081
+
+# Swagger/OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+# Logging
+logging:
+  level:
+    com.esd.hotelmanagement: DEBUG
+    org.springframework.security: DEBUG
