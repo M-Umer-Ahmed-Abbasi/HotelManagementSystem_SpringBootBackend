@@ -2,20 +2,19 @@ spring:
   application:
     name: hotel-management-system
 
-  # Default profile uses H2 for easy development
+  # Default profile uses PostgreSQL
   profiles:
     active: dev
 
   datasource:
-    url: jdbc:h2:mem:hoteldb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:postgresql://localhost:5432/hoteldb
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:talha}
 
   h2:
     console:
-      enabled: true
-      path: /h2-console
+      enabled: false
 
   jpa:
     hibernate:
@@ -24,16 +23,16 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.H2Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 # JWT Configuration
 jwt:
-  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
-  expiration: 86400000  # 24 hours in milliseconds
+  secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+  expiration: ${JWT_EXPIRATION:86400000}  # 24 hours in milliseconds
 
 # Server Configuration
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
 
 # Swagger/OpenAPI Configuration
 springdoc:
@@ -48,3 +47,17 @@ logging:
   level:
     com.esd.hotelmanagement: DEBUG
     org.springframework.security: DEBUG
+
+# Stripe Configuration
+stripe:
+  api-key: ${STRIPE_API_KEY:sk_test_placeholder}
+  webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_placeholder}
+  publishable-key: ${STRIPE_PUBLISHABLE_KEY:pk_test_placeholder}
+  enabled: ${STRIPE_ENABLED:true}
+
+# Application custom properties
+app:
+  name: Hotel Management System
+  version: 1.0.0
+  default-page-size: ${APP_DEFAULT_PAGE_SIZE:10}
+  max-page-size: ${APP_MAX_PAGE_SIZE:100}
