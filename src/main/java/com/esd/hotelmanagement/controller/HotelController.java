@@ -38,13 +38,13 @@ public class HotelController {
     }
 
     @GetMapping
-    @Operation(summary = "Search hotels with filters")
+    @Operation(summary = "Search hotels with filters", description = "Search for hotels with optional filters. For sorting, use valid fields like 'name', 'starRating', 'createdAt'. Leave sort empty for default ordering.")
     public ResponseEntity<Page<HotelResponse>> searchHotels(
             @RequestParam(required = false) String city,
             @RequestParam(required = false) Integer minRating,
             @RequestParam(required = false) BigDecimal minPrice,
             @RequestParam(required = false) BigDecimal maxPrice,
-            @PageableDefault(size = 10) Pageable pageable) {
+            @PageableDefault(size = 10, sort = "createdAt") Pageable pageable) {
         return ResponseEntity.ok(hotelService.searchHotels(city, minRating, minPrice, maxPrice, pageable));
     }
 

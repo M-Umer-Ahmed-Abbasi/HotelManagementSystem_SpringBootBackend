@@ -46,8 +46,11 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // Public endpoints
                         .requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/api-docs/**").permitAll()
+                        .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**", "/api-docs/**")
+                        .permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/api/payments/webhook").permitAll() // Stripe webhook
+                        .requestMatchers("/api/payments/stripe/status").permitAll() // Stripe status check
 
                         // Hotel search is public
                         .requestMatchers(HttpMethod.GET, "/api/hotels/**").permitAll()

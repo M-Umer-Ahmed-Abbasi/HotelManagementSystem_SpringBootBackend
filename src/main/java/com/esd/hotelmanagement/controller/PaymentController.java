@@ -1,5 +1,7 @@
 package com.esd.hotelmanagement.controller;
 
+import com.esd.hotelmanagement.dto.CreatePaymentIntentRequest;
+import com.esd.hotelmanagement.dto.PaymentIntentResponse;
 import com.esd.hotelmanagement.dto.PaymentRequest;
 import com.esd.hotelmanagement.dto.PaymentResponse;
 import com.esd.hotelmanagement.service.PaymentService;
@@ -13,27 +15,65 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.util.Map;
 
 /**
  * REST controller for payment operations.
+ * Supports both mock payments and Stripe integration.
  * 
  * @author Talha
  */
 @RestController
 @RequestMapping("/api/payments")
 @RequiredArgsConstructor
-@Tag(name = "Payments", description = "Payment processing")
+@Tag(name = "Payments", description = "Payment processing (Mock & Stripe)")
 @SecurityRequirement(name = "bearerAuth")
 public class PaymentController {
 
     private final PaymentService paymentService;
 
+    // ==================== Mock Payment Endpoints ====================
+
     @PostMapping
-    @Operation(summary = "Process a payment for a reservation")
+    @Operation(summary = "Process a mock payment for a reservation (for testing)")
     public ResponseEntity<PaymentResponse> processPayment(@Valid @RequestBody PaymentRequest request) {
         PaymentResponse response = paymentService.processPayment(request);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
+
+    // ==================== Stripe Payment Endpoints ====================
+
+    @PostMapping("/stripe/create-intent")
+    @Operation(summary = "Create a Stripe payment intent for a reservation")
+    public ResponseEntity<PaymentIntentResponse> createPaymentIntent(
+            @Valid @RequestBody CreatePaymentIntentRequest request) {
+        PaymentIntentResponse response = paymentService.createPaymentIntent(request);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/stripe/confirm/{paymentIntentId}")
+    @Operation(summary = "Confirm a Stripe payment after frontend completion")
+    public ResponseEntity<PaymentResponse> confirmStripePayment(@PathVariable String paymentIntentId) {
+        PaymentResponse response = paymentService.confirmStripePayment(paymentIntentId);
+        return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/webhook")
+    @Operation(summary = "Stripe webhook handler (called by Stripe)")
+    public ResponseEntity<String> handleStripeWebhook(
+            @RequestBody String payload,
+            @RequestHeader(value = "Stripe-Signature", required = false) String sigHeader) {
+        paymentService.handleStripeWebhook(payload, sigHeader);
+        return ResponseEntity.ok("Received");
+    }
+
+    @GetMapping("/stripe/status")
+    @Operation(summary = "Check if Stripe payments are enabled")
+    public ResponseEntity<Map<String, Boolean>> getStripeStatus() {
+        return ResponseEntity.ok(Map.of("enabled", paymentService.isStripeEnabled()));
+    }
+
+    // ==================== Common Endpoints ====================
 
     @GetMapping("/{id}")
     @Operation(summary = "Get payment by ID")

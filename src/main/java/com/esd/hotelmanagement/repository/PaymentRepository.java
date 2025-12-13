@@ -20,33 +20,36 @@ import java.util.Optional;
 @Repository
 public interface PaymentRepository extends JpaRepository<Payment, Long> {
 
-    Optional<Payment> findByReservationId(Long reservationId);
+        Optional<Payment> findByReservationId(Long reservationId);
 
-    List<Payment> findByStatus(PaymentStatus status);
+        List<Payment> findByStatus(PaymentStatus status);
 
-    Optional<Payment> findByTransactionId(String transactionId);
+        Optional<Payment> findByTransactionId(String transactionId);
 
-    // Revenue calculations for admin reports
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'SUCCESS'")
-    BigDecimal calculateTotalRevenue();
+        // Find by Stripe payment intent ID
+        Optional<Payment> findByStripePaymentIntentId(String stripePaymentIntentId);
 
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'SUCCESS' AND p.paidAt BETWEEN :startDate AND :endDate")
-    BigDecimal calculateRevenueByDateRange(
-            @Param("startDate") LocalDateTime startDate,
-            @Param("endDate") LocalDateTime endDate);
+        // Revenue calculations for admin reports
+        @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'SUCCESS'")
+        BigDecimal calculateTotalRevenue();
 
-    // Revenue for a specific hotel
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p " +
-            "WHERE p.status = 'SUCCESS' " +
-            "AND p.reservation.room.roomType.hotel.id = :hotelId")
-    BigDecimal calculateHotelRevenue(@Param("hotelId") Long hotelId);
+        @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p WHERE p.status = 'SUCCESS' AND p.paidAt BETWEEN :startDate AND :endDate")
+        BigDecimal calculateRevenueByDateRange(
+                        @Param("startDate") LocalDateTime startDate,
+                        @Param("endDate") LocalDateTime endDate);
 
-    @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p " +
-            "WHERE p.status = 'SUCCESS' " +
-            "AND p.reservation.room.roomType.hotel.id = :hotelId " +
-            "AND p.paidAt BETWEEN :startDate AND :endDate")
-    BigDecimal calculateHotelRevenueByDateRange(
-            @Param("hotelId") Long hotelId,
-            @Param("startDate") LocalDateTime startDate,
-            @Param("endDate") LocalDateTime endDate);
+        // Revenue for a specific hotel
+        @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p " +
+                        "WHERE p.status = 'SUCCESS' " +
+                        "AND p.reservation.room.roomType.hotel.id = :hotelId")
+        BigDecimal calculateHotelRevenue(@Param("hotelId") Long hotelId);
+
+        @Query("SELECT COALESCE(SUM(p.amount), 0) FROM Payment p " +
+                        "WHERE p.status = 'SUCCESS' " +
+                        "AND p.reservation.room.roomType.hotel.id = :hotelId " +
+                        "AND p.paidAt BETWEEN :startDate AND :endDate")
+        BigDecimal calculateHotelRevenueByDateRange(
+                        @Param("hotelId") Long hotelId,
+                        @Param("startDate") LocalDateTime startDate,
+                        @Param("endDate") LocalDateTime endDate);
 }

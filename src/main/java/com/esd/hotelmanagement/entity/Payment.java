@@ -41,6 +41,13 @@ public class Payment {
 
     private String transactionId; // External payment gateway transaction ID
 
+    // Stripe-specific fields
+    private String stripePaymentIntentId;
+    private String stripeCustomerId;
+
+    @Builder.Default
+    private String currency = "usd";
+
     private LocalDateTime paidAt;
 
     @Column(updatable = false)

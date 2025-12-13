@@ -1,0 +1,624 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.esd:hotelmanagement >-----------------------
+[INFO] Building Hotel Management System 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ hotelmanagement ---
+[INFO] Deleting F:\ESD_Project_springboot\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hotelmanagement ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ hotelmanagement ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 104 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AdminController.java:[33,31] variable userService not initialized in the default constructor
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AdminController.java:[34,33] variable reportService not initialized in the default constructor
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[46,25] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[46,59] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[53,34] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[54,33] cannot find symbol
+  symbol:   method getLastName()
+  location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[55,30] cannot find symbol
+  symbol:   method getPhone()
+  location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[77,13] cannot find symbol
+  symbol:   method setEnabled(boolean)
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[85,13] cannot find symbol
+  symbol:   method setEnabled(boolean)
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[90,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.UserResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[91,25] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[92,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[93,32] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[94,31] cannot find symbol
+  symbol:   method getLastName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[95,28] cannot find symbol
+  symbol:   method getPhone()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[96,27] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[97,30] cannot find symbol
+  symbol:   method getEnabled()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[98,32] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[42,37] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.RevenueReportResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[66,31] cannot find symbol
+  symbol:   method getStatus()
+  location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[67,29] cannot find symbol
+  symbol:   method getStatus()
+  location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[70,31] cannot find symbol
+  symbol:   method getStatus()
+  location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[73,37] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.RevenueReportResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[81,33] cannot find symbol
+  symbol:   method getName()
+  location: variable hotel of type com.esd.hotelmanagement.entity.Hotel
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Payment.java:[70,12] cannot find symbol
+  symbol:   method setPayment(com.esd.hotelmanagement.entity.Payment)
+  location: variable log of type com.esd.hotelmanagement.entity.TransactionLog
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[108,17] cannot find symbol
+  symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+  location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[113,14] cannot find symbol
+  symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+  location: variable photo of type com.esd.hotelmanagement.entity.Photo
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[118,16] cannot find symbol
+  symbol:   method getHotels()
+  location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[123,14] cannot find symbol
+  symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+  location: variable staff of type com.esd.hotelmanagement.entity.Staff
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/User.java:[30,8] com.esd.hotelmanagement.entity.User is not abstract and does not override abstract method getPassword() in org.springframework.security.core.userdetails.UserDetails
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/RoomType.java:[62,13] cannot find symbol
+  symbol:   method setRoomType(com.esd.hotelmanagement.entity.RoomType)
+  location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Room.java:[57,21] cannot find symbol
+  symbol:   method setRoom(com.esd.hotelmanagement.entity.Room)
+  location: variable availability of type com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[41,61] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[42,76] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[45,34] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[46,30] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[47,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[48,30] cannot find symbol
+  symbol:   method getIcon()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[60,32] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[61,39] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[62,32] cannot find symbol
+  symbol:   method getIcon()
+  location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[76,31] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.AmenityResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[77,28] cannot find symbol
+  symbol:   method getId()
+  location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[78,30] cannot find symbol
+  symbol:   method getName()
+  location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[79,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[80,30] cannot find symbol
+  symbol:   method getIcon()
+  location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[36,49] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[37,74] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[41,28] cannot find symbol
+  symbol:   method getRole()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[41,56] cannot find symbol
+  symbol:   method getRole()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[44,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[45,31] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[46,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[47,35] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[48,34] cannot find symbol
+  symbol:   method getLastName()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[49,31] cannot find symbol
+  symbol:   method getPhone()
+  location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[58,59] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.LoyaltyAccount
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[69,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.AuthResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[72,29] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[73,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[74,32] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[75,31] cannot find symbol
+  symbol:   method getLastName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[76,27] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[84,32] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[85,32] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[88,55] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[94,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.dto.AuthResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[97,29] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[98,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[99,32] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[100,31] cannot find symbol
+  symbol:   method getLastName()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[101,27] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AvailabilityController.java:[44,58] cannot find symbol
+  symbol:   method getId()
+  location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AvailabilityController.java:[45,25] incompatible types: inference variable T has incompatible bounds
+    equality constraints: com.esd.hotelmanagement.dto.RoomResponse
+    lower bounds: java.lang.Object
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[37,95] cannot find symbol
+  symbol:   method getDate()
+  location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[38,37] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[40,38] cannot find symbol
+  symbol:   method getDate()
+  location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[43,44] cannot find symbol
+  symbol:   method getIsAvailable()
+  location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[44,46] cannot find symbol
+  symbol:   method getPriceOverride()
+  location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[58,41] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[62,25] cannot find symbol
+  symbol:   method setIsAvailable(boolean)
+  location: variable availability of type com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[36,37] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[37,30] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[38,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[39,35] cannot find symbol
+  symbol:   method getBasePrice()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[40,38] cannot find symbol
+  symbol:   method getMaxOccupancy()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[65,37] cannot find symbol
+  symbol:   method getHotel()
+  location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[67,33] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[68,40] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[69,38] cannot find symbol
+  symbol:   method getBasePrice()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[70,41] cannot find symbol
+  symbol:   method getMaxOccupancy()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[80,37] cannot find symbol
+  symbol:   method getHotel()
+  location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[89,37] cannot find symbol
+  symbol:   method getHotel()
+  location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[91,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[92,36] cannot find symbol
+  symbol:   method getRoomNumber()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[93,31] cannot find symbol
+  symbol:   method getFloor()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[94,32] cannot find symbol
+  symbol:   method getStatus()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[94,62] cannot find symbol
+  symbol:   method getStatus()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[125,33] cannot find symbol
+  symbol:   method getRoomType()
+  location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[127,35] cannot find symbol
+  symbol:   method getRoomNumber()
+  location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.547 s
+[INFO] Finished at: 2025-12-07T16:54:36+05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project hotelmanagement: Compilation failure: Compilation failure: 
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AdminController.java:[33,31] variable userService not initialized in the default constructor
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AdminController.java:[34,33] variable reportService not initialized in the default constructor
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[46,25] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[46,59] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[53,34] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[54,33] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[55,30] cannot find symbol
+[ERROR]   symbol:   method getPhone()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.UserUpdateRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[77,13] cannot find symbol
+[ERROR]   symbol:   method setEnabled(boolean)
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[85,13] cannot find symbol
+[ERROR]   symbol:   method setEnabled(boolean)
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[90,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.UserResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[91,25] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[92,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[93,32] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[94,31] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[95,28] cannot find symbol
+[ERROR]   symbol:   method getPhone()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[96,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[97,30] cannot find symbol
+[ERROR]   symbol:   method getEnabled()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/UserService.java:[98,32] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[42,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.RevenueReportResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[66,31] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[67,29] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[70,31] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable r of type com.esd.hotelmanagement.entity.Reservation
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[73,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.RevenueReportResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/ReportService.java:[81,33] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable hotel of type com.esd.hotelmanagement.entity.Hotel
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Payment.java:[70,12] cannot find symbol
+[ERROR]   symbol:   method setPayment(com.esd.hotelmanagement.entity.Payment)
+[ERROR]   location: variable log of type com.esd.hotelmanagement.entity.TransactionLog
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[108,17] cannot find symbol
+[ERROR]   symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+[ERROR]   location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[113,14] cannot find symbol
+[ERROR]   symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+[ERROR]   location: variable photo of type com.esd.hotelmanagement.entity.Photo
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[118,16] cannot find symbol
+[ERROR]   symbol:   method getHotels()
+[ERROR]   location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Hotel.java:[123,14] cannot find symbol
+[ERROR]   symbol:   method setHotel(com.esd.hotelmanagement.entity.Hotel)
+[ERROR]   location: variable staff of type com.esd.hotelmanagement.entity.Staff
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/User.java:[30,8] com.esd.hotelmanagement.entity.User is not abstract and does not override abstract method getPassword() in org.springframework.security.core.userdetails.UserDetails
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/RoomType.java:[62,13] cannot find symbol
+[ERROR]   symbol:   method setRoomType(com.esd.hotelmanagement.entity.RoomType)
+[ERROR]   location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/entity/Room.java:[57,21] cannot find symbol
+[ERROR]   symbol:   method setRoom(com.esd.hotelmanagement.entity.Room)
+[ERROR]   location: variable availability of type com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[41,61] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[42,76] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[45,34] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[46,30] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[47,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[48,30] cannot find symbol
+[ERROR]   symbol:   method getIcon()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[60,32] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[61,39] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[62,32] cannot find symbol
+[ERROR]   symbol:   method getIcon()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AmenityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[76,31] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.AmenityResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[77,28] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[78,30] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[79,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AmenityService.java:[80,30] cannot find symbol
+[ERROR]   symbol:   method getIcon()
+[ERROR]   location: variable amenity of type com.esd.hotelmanagement.entity.Amenity
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[36,49] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[37,74] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[41,28] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[41,56] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[44,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[45,31] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[46,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[47,35] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[48,34] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[49,31] cannot find symbol
+[ERROR]   symbol:   method getPhone()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RegisterRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[58,59] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.LoyaltyAccount
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[69,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.AuthResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[72,29] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[73,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[74,32] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[75,31] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[76,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[84,32] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[85,32] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[88,55] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.LoginRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[94,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.dto.AuthResponse
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[97,29] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[98,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[99,32] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[100,31] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AuthService.java:[101,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.esd.hotelmanagement.entity.User
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AvailabilityController.java:[44,58] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/controller/AvailabilityController.java:[45,25] incompatible types: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.esd.hotelmanagement.dto.RoomResponse
+[ERROR]     lower bounds: java.lang.Object
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[37,95] cannot find symbol
+[ERROR]   symbol:   method getDate()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[38,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[40,38] cannot find symbol
+[ERROR]   symbol:   method getDate()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[43,44] cannot find symbol
+[ERROR]   symbol:   method getIsAvailable()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[44,46] cannot find symbol
+[ERROR]   symbol:   method getPriceOverride()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.AvailabilityRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[58,41] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/AvailabilityService.java:[62,25] cannot find symbol
+[ERROR]   symbol:   method setIsAvailable(boolean)
+[ERROR]   location: variable availability of type com.esd.hotelmanagement.entity.Availability
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[36,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[37,30] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[38,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[39,35] cannot find symbol
+[ERROR]   symbol:   method getBasePrice()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[40,38] cannot find symbol
+[ERROR]   symbol:   method getMaxOccupancy()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[65,37] cannot find symbol
+[ERROR]   symbol:   method getHotel()
+[ERROR]   location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[67,33] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[68,40] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[69,38] cannot find symbol
+[ERROR]   symbol:   method getBasePrice()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[70,41] cannot find symbol
+[ERROR]   symbol:   method getMaxOccupancy()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomTypeRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[80,37] cannot find symbol
+[ERROR]   symbol:   method getHotel()
+[ERROR]   location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[89,37] cannot find symbol
+[ERROR]   symbol:   method getHotel()
+[ERROR]   location: variable roomType of type com.esd.hotelmanagement.entity.RoomType
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[91,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[92,36] cannot find symbol
+[ERROR]   symbol:   method getRoomNumber()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[93,31] cannot find symbol
+[ERROR]   symbol:   method getFloor()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[94,32] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[94,62] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[125,33] cannot find symbol
+[ERROR]   symbol:   method getRoomType()
+[ERROR]   location: variable room of type com.esd.hotelmanagement.entity.Room
+[ERROR] /F:/ESD_Project_springboot/src/main/java/com/esd/hotelmanagement/service/RoomService.java:[127,35] cannot find symbol
+[ERROR]   symbol:   method getRoomNumber()
+[ERROR]   location: variable request of type com.esd.hotelmanagement.dto.RoomRequest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
